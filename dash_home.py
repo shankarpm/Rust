@@ -14,7 +14,7 @@ dash_app = dash.Dash(__name__, server=server, url_base_pathname='/', external_st
 
 # Define the URLs associated with each app
 app_urls = {
-    'App 1': 'http://10.195.176.87:8000/documentsummarizer',
+    'App 1': 'http://10.195.176.87:8000/documentsummarizer/',
     'App 2': 'http://10.195.176.87:8000/'
 }
 
