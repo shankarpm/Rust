@@ -2517,6 +2517,6 @@ def handle_exception(e):
 ###############################################################################
 if __name__ == '__main__':
     #if RUN_ON_LOCAL:
-    docsapp.run_server(debug=False, port=8888)
+    docsapp.run_server(debug=False)
     #else:
       #  app.run_server(debug=False, host='0.0.0.0', port=8888)
