@@ -40,7 +40,7 @@ APP_URL = '/'
 #if DOMINO_PROJECT_OWNER is not None and DOMINO_PROJECT_NAME is not None and DOMINO_RUN_ID is not None:
  #   RUN_ON_LOCAL = 0
 #if RUN_ON_LOCAL:
-docsapp = dash.Dash(__name__, meta_tags=[
+docsapp = dash.Dash(__name__, requests_pathname_prefix='/documentsummarizer/',meta_tags=[
                     {'name': 'viewport', 'content': 'width = device-width, initial-scale = 1'}], external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP, dbc.icons.FONT_AWESOME])
 # else:
 #     import upload_functions as uf
