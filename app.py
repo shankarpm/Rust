@@ -1,4 +1,4 @@
-API_BASE_URL='http://10.195.176.70:8000'
+API_BASE_URL='http://10.198.176.86:8000'
 API_URL = API_BASE_URL +'/apiportal/' 
 LOG_API_URL=API_BASE_URL +'/logresponse/'
 
