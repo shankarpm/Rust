@@ -1,1 +1,2 @@
 
+gunicorn -b localhost:8050 dash_home:app1 --reload --log-level debug
