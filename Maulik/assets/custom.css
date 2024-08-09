@@ -1,0 +1,417 @@
+*{
+  font-size: max(1.05vw, 12px);
+  color: #30323d;
+}
+
+body {
+  overflow: hidden!important;
+  height: 100vh;
+}
+
+.bg-dark, .navbar-dark {
+  font-weight: 550;
+  background-color: #30323d!important;
+  letter-spacing: 1.1px;
+  display: flex;
+}
+
+.control-bar {
+  background-color: transparent!important;
+  color: #30323d!important;
+}
+
+.control-bar-wrapper {
+  animation: 0.75s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: 0.5s ease-out 0s 1 fadeIn;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.bg-secondary {
+  background-color: #0073BD!important;
+  border-color: transparent;
+}
+
+.btn-primary_home {
+  background-color:#1A81C4;
+  border-color:transparent;
+  color:#fff;
+  width: 200px; /* Set the width as needed */
+}
+
+/* Ensure the disabled state has the same background color */
+.btn-primary_home.disabled, 
+.btn-primary_home:disabled {
+  background-color: #0073BD;
+  border-color: transparent;
+  color: #fff;
+  width: 200px; /* Set the width as needed */
+}
+
+/* Add hover state styling */
+.btn-primary_home:hover {
+  background-color: #0073BD;
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0073BD;
+  border-color: transparent;
+  width: 100%;
+}
+
+.btn-outline-primary, .btn-outline-primary:focus {
+  background-color: transparent!important;
+  border-color: transparent!important;
+  color: #0073BD!important;
+  outline: none!important;
+  outline-style: none!important;
+  box-shadow: none!important;
+}
+
+.btn-outline-primary:active, .btn-outline-primary:hover {
+  background-color: transparent!important;
+  border-color: transparent!important;
+  color: #1A81C4!important;
+  outline: none!important;
+  outline-style: none!important;
+  box-shadow: none!important;
+}
+
+.btn-secondary {
+  color: #fff!important;
+  background-color: #0073BD!important;
+  border-color: transparent!important;
+}
+
+.btn-secondary:hover {
+  color: #fff!important;
+  background-color: #1A81C4!important;
+  border-color: transparent!important;
+}
+
+.btn, .btn:active, .btn:focus {
+  outline: none!important;
+  outline-style: none!important;
+  box-shadow: none!important;
+  border-color: transparent!important;
+}
+
+.btn-secondary:hover {
+  transition: 0.2s background-color linear!important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)!important;
+}
+
+.btn-secondary:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)!important;
+}
+
+.btn:active {
+  transform: translateY(1px)!important;
+}
+
+.btn-close:focus {
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.bi {
+  color: #1A81C4!important;
+}
+
+.bi-upload {
+  color: gray!important;
+}
+
+.bi-clipboard::before {
+  fill: currentColor!important;
+}
+
+.Select-control {
+  color: #fff;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.form-control{
+  outline: none!important;
+  outline-style: none!important;
+  box-shadow: none!important;
+  border-color: transparent!important;
+}
+
+.form-control:focus{
+  outline: none!important;
+  outline-style: none!important;
+  box-shadow: none!important;
+  border-color: transparent!important;
+}
+
+.dropdown-item:focus{
+  background-color: #0073BD;
+}
+
+
+.Select.is-focused > .Select-control{
+  border-color: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.VirtualizedSelectFocusedOption {
+  background-color: #0073BD;
+  color: white;
+}
+
+.Select-menu-outer {
+  top: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.tooltip-inner {
+  white-space:nowrap;
+  max-width:none;
+}
+
+
+.dash-uploader-label{
+  font-size: max(1vw, 10px)!important;
+  color: gray!important;
+  font-weight: 50!important;
+}
+
+.progress-bar-striped{
+  background-color:#0073BD!important;
+}
+
+.progress{
+  margin-top:1!important;
+  margin-bottom:1!important;
+}
+
+.dash-uploader-button-container{
+  text-align: center!important;
+}
+
+.btn-dash-uploader[style] {
+  margin-left:auto!important;
+  float: none!important;
+}
+
+.dash-uploader-default {
+  border-color: gray!important;
+  border-width: 3px!important;
+}
+
+#single-file-upload:hover {
+  border-radius: 5px!important;
+}
+
+#single-file-upload:active {
+  transform: translateY(1px)!important;
+}
+
+#single-file-upload > .mx-1 {
+  outline: 2px dashed transparent;
+  background:
+      linear-gradient(90deg, #adb5bd 50%, transparent 0) repeat-x,
+      linear-gradient(90deg, #adb5bd 50%, transparent 0) repeat-x,
+      linear-gradient(0deg, #adb5bd 50%, transparent 0) repeat-y,
+      linear-gradient(0deg, #adb5bd 50%, transparent 0) repeat-y;
+  background-size: 12px 2px, 12px 2px, 2px 12px, 2px 12px;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  outline-offset: -2px;
+}
+
+#single-file-upload > .mx-1:hover {
+  animation: linearGradientMove 1.5s infinite linear;
+}
+
+.nav-bar-button {
+  filter: none;
+  transition: filter 0.5s linear;
+}
+
+.nav-bar-button:hover {
+  filter: brightness(115%)!important;
+  transition: 0.5s filter linear, 0.5s -webkit-filter linear;
+}
+
+@keyframes linearGradientMove {
+  100% {
+      background-position: 12px 0, -12px 100%, 0 -12px, 100% 12px;
+  }
+} 
+
+.info-icon{
+  color: #0073BD;
+}
+
+.tooltip-inner {
+  text-align: left;
+}
+
+.suggested-questions{
+  cursor: pointer;
+  color: #0073BD;
+}
+
+.suggested-questions:hover{
+  color: #1A81C4;
+}
+
+.form-control::-webkit-scrollbar {
+  width: 0px!important;
+  display: none!important;
+}
+  
+.form-control {
+  scrollbar-width: 0px!important;
+  min-height: 0!important;
+}
+
+.spinner-fullscreen, .file-upload-spinner-fullscreen {
+  background-color: rgba(255,255,255,0.7)!important;
+  z-index: 99999;
+}
+
+.spinner-border {
+  all: unset;
+}
+
+.spinner-border {
+  width: 50%;
+  height: 20px;
+  border-radius: 4.5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background:
+   linear-gradient(#0073BD 0 0) 0/0% no-repeat
+   #ddd;
+  position: relative;
+  animation: l1 300s 1 linear;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+  font-size: 16px;
+  text-align: center;
+}
+
+@keyframes l1 {
+  100% { background-size: 100%; }
+}
+
+.modal-footer {
+  justify-content: flex-start;
+  padding: var(--bs-modal-padding);
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color: #0073BD;
+}
+
+
+#results-display {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  line-height: 1rem!important;
+  background-image: repeating-linear-gradient(white 0px, white 0.9rem, rgba(0, 115, 189, 0.4) 1rem);
+  padding-left: 56px!important;
+}
+
+#results-display::before {
+  content: '';
+  width: 2px;
+  top: 0;
+  left: 40px;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.35);
+  position: absolute;
+}
+
+#results-display::-moz-selection {
+  background: #fffec8;
+}
+
+#results-display::selection {
+  background: #fffec8;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 6px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #f1f1f1;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: #0073BD;
+    --bs-accordion-btn-focus-box-shadow: transparent;
+    --bs-accordion-active-color: #0073BD;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none!important;
+}
+
+.nyl-inv-logo {
+  height: 2.75rem;
+  background: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12.5px;
+  padding-right: 13px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+/* Media query to hide the box when screen height is less than or equal to 500px */
+@media screen and (max-height: 500px) {
+  .nylim-logo-bottom {
+      display: none!important;
+  }
+}
+
+/* Apply the class when the condition is met */
+@media screen and (min-width: calc(2.5 * 100vh)) {
+  .nylim-logo-bottom {
+    display: none!important;
+  }
+}
