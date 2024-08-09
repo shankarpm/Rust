@@ -1692,7 +1692,7 @@ def generate_log(tz_eastern, start_time, transferDateTime, timestamp_id, mode, s
         #user_input, results_paragraph, results_json_from_api = log_files_on_the_fly(user_input, results_paragraph, results_json_from_api, submit_type)
 
         log_list = {
-            "username": request.cookies.get('hostname'),#request.headers.get('domino-username'), # Domino username; None if on local
+            "username": request.headers.get('domino-username'), # Domino username; None if on local
             "timestamp":timestamp_id, # YYYYMMDDHHMMSS
             "processing time": ptime, # Processing time
             "status":'Success', # Success (or Fail for exception log)
