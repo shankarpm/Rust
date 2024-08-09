@@ -1,2 +1,5 @@
 
 gunicorn -b localhost:8050 dash_home:app1 --reload --log-level debug
+
+
+in documentsummarizer.py the api results will be here  in line 1867    ->    results_paragraph, results_json_from_api = get_answers_from_app_api_portal('Document Summary', file_id, original_filename, 2, binary_file_content, '')
